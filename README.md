@@ -45,4 +45,9 @@ This Chrome extension fetches and displays Quranic verses at regular intervals. 
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-![Zekr Logo](extension_logo.png)
+![Zekr Logo](extension_logo.png).
+
+## Video Tutorial
+
+[Watch the How-To Video](how_to.mp4)
+
