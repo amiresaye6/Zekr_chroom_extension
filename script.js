@@ -52,4 +52,4 @@ setInterval(() => {
     }
 
     fetchAyah(currentSurahIndex, currentAyahIndex);
-}, 5 * 60 * 1000);
+},  5 * 60 * 1000);
