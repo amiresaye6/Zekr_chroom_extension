@@ -13,7 +13,7 @@ This Chrome extension fetches and displays Quranic verses at regular intervals. 
    - Enable "Developer mode" in the top-right corner.
    - Click on "Load unpacked" and select the folder containing the extension files.
 
-3. The extension will fetch and display a new Quranic verse every 10 minutes.
+3. The extension will fetch and display a new Quranic verse every 5 minutes.
 
 ## Files
 
