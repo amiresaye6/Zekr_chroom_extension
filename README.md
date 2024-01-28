@@ -13,7 +13,7 @@ This Chrome extension fetches and displays Quranic verses at regular intervals. 
    - Enable "Developer mode" in the top-right corner.
    - Click on "Load unpacked" and select the folder containing the extension files.
 
-3. The extension will fetch and display a new Quranic verse every 10 minuts.
+3. The extension will fetch and display a new Quranic verse every 10 minutes.
 
 ## Files
 
@@ -33,6 +33,8 @@ This Chrome extension fetches and displays Quranic verses at regular intervals. 
 
 - Replace the Arabic font link in `index.html` with your preferred Arabic font.
 
+- Add your own extension logo (`extension_logo.png`) for a personalized touch.
+
 ## Notes
 
 - The use of `alert` to display verses might be disruptive. Consider alternative methods for a more user-friendly experience.
@@ -42,3 +44,5 @@ This Chrome extension fetches and displays Quranic verses at regular intervals. 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+![Zekr Logo](extension_logo.png)
