@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Lateef', cursive; /* Replace 'Lateef' with your preferred Arabic font */
+}
+
+.alert-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.alert-box {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Lateef', cursive; /* Replace 'Lateef' with your preferred Arabic font */
+    display: flex;
+    flex-direction: column; /* Ensure that label and text are stacked vertically */
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure that the alert-box takes the full height of the alert-container */
+}
+
+.label {
+    margin-bottom: 10px;
+    font-family: 'Lateef', cursive; /* Apply the same font as the body and alert box */
+}
