@@ -1,13 +1,19 @@
 {
     "manifest_version": 3,
     "name": "Zekr",
-    "version": "1.0",
+    "version": "2.0",
     "description": "Display Quran Ayahs in a Chrome extension popup",
     "author": "Amir Alsayed",
     "action": {
-        "default_popup": "index.html"
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        }
     },
     "permissions": [
+        "tabs",
         "activeTab"
     ]
 }
