@@ -15,6 +15,11 @@ This Chrome extension fetches and displays Quranic verses at regular intervals. 
 
 3. The extension will fetch and display a new Quranic verse every 5 minutes.
 
+## to do
+1/ make durration functional
+2/ make close button functional
+3/ fix style (make body background transperant)
+
 ## Files
 
 - `manifest.json`: Provides metadata about the extension, including permissions and the location of content scripts.
