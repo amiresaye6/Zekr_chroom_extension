@@ -23,6 +23,8 @@
     border-radius: var(--border-radius-main);
     box-shadow: var(--shadow);
     transition: .2s ease all;
+    min-width: 200px;
+    min-height: 150px;
   }
   
   .like-dislike-container:hover {
