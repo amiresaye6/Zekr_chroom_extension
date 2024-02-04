@@ -7,15 +7,25 @@
     <title>Quran Ayah Display</title>
     <link rel="icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <!-- Include your chosen Arabic font -->
-    <link href="https://fonts.googleapis.com/css2?family=Lateef&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <input type="number" name="duration" id="duration" placeholder="Enter in duration" style="width: 100px;">
-    <button id="supmit">OK</button>
-    <h1 id="ayah_container" style="width: 100px;"></h1>
-    <script src="script.js"></script>
+    <div class="like-dislike-container">
+
+        <div class="tool-box">
+            <button class="btn-close">×</button>
+        </div>
+
+        <p class="text-content" id="ayah_container"></p>
+
+        <label class="search-label">
+            <input type="text" name="duration" class="input" id="duration" placeholder="Duration...">
+        </label>
+
+        <button class="button" id="supmit"> Submit </button>
+
+    </div>
 </body>
 
 </html>
