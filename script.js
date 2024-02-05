@@ -3,11 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const container = document.getElementById("ayah_container");
     const duration = document.getElementById("duration");
     const supmit = document.getElementById("supmit");
-    let value = 5;
+    let value = 1;
     let currentSurahIndex = 0;
     let currentAyahIndex = 0;
     let totalSurahs = 0;
     let totalAyahsInSurah = 0;
+    let intervalId;
 
     function fetchAyah(surahIndex, ayahIndex) {
         fetch(jsonUrl)
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (ayahIndex >= 0 && ayahIndex < totalAyahsInSurah) {
                         const ayahText = surah.verses[ayahIndex].text;
                         container.innerHTML = ayahText;
+                        console.log(ayahText);
                     } else {
                         console.error("Invalid ayah index in the current surah");
                     }
@@ -56,15 +58,24 @@ document.addEventListener("DOMContentLoaded", function () {
     fetchAyah(0, 1);
 
     // Set interval to fetch and display a new ayah every n seconds
-    supmit.addEventListener('click', () => {
-        const userInput = parseInt(duration.value, 10);
-    
-        if (!isNaN(userInput) && userInput > 0) {
-            value = userInput;
-            console.log(value)
-        } else {
-            console.error("Invalid duration input. Please enter a positive number.");
-        }
-    });
-    setInterval(updateAyah, value * 1000);
+    if (supmit) {
+        supmit.addEventListener('click', () => {
+            let userInput = parseInt(duration.value, 10);
+
+            if (!isNaN(userInput) && userInput > 0) {
+                value = userInput;
+                console.log(value);
+
+                // Clear previous interval before setting a new one
+                clearInterval(intervalId);
+
+                // Set a new interval
+                intervalId = setInterval(updateAyah, value * 1000);
+            } else {
+                console.error("Invalid duration input. Please enter a positive number.");
+            }
+        });
+    } else {
+        console.error("Element with ID 'submit' not found.");
+    }
 });

@@ -1,4 +1,7 @@
 /* card style */
+body {
+  background-color: transparent;
+}
 .like-dislike-container {
     --dark-grey: #353535;
     --middle-grey: #767676;
@@ -23,8 +26,8 @@
     border-radius: var(--border-radius-main);
     box-shadow: var(--shadow);
     transition: .2s ease all;
-    min-width: 200px;
-    min-height: 150px;
+    min-width: 250px;
+    min-height: 120px;
   }
   
   .like-dislike-container:hover {
@@ -77,7 +80,7 @@
     box-shadow: var(--shadow-btn-close);
   }
   
-  .like-dislike-container .text-content {
+  .text-content {
     margin-bottom: 1rem;
     font-size: 18px;
     line-height: 1.6;
@@ -95,6 +98,7 @@
     background: #3D3D3D;
     padding: 9px;
     cursor: text;
+    width: 110px;
   }
   
   .search-label:hover {
@@ -132,30 +136,6 @@
   .slash-icon {
     position: absolute;
     color: #7e7e7e;
-  }
-  
-  .search-icon {
-    display: none;
-    width: 12px;
-    height: auto;
-  }
-  
-  .slash-icon {
-    right: 7px;
-    border: 1px solid #393838;
-    background: linear-gradient(-225deg, #343434, #6d6d6d);
-    border-radius: 3px;
-    text-align: center;
-    box-shadow: inset 0 -2px 0 0 #3f3f3f, inset 0 0 1px 1px rgb(94, 93, 93), 0 1px 2px 1px rgba(28, 28, 29, 0.4);
-    cursor: pointer;
-    font-size: 12px;
-    width: 15px;
-  }
-  
-  .slash-icon:active {
-    box-shadow: inset 0 1px 0 0 #3f3f3f, inset 0 0 1px 1px rgb(94, 93, 93), 0 1px 2px 0 rgba(28, 28, 29, 0.4);
-    text-shadow: 0 1px 0 #7e7e7e;
-    color: transparent;
   }
 /* supmit button style  */
 
@@ -213,3 +193,10 @@
     transition: 0s;
     transform: translate(0, 5%);
   }
+
+.inner_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 250px;
+}

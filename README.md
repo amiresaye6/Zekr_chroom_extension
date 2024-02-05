@@ -2,7 +2,7 @@
 
 # Quran Ayah Display Chrome Extension
 
-This Chrome extension fetches and displays Quranic verses at regular intervals. It uses a JSON file (`quraan.json`) containing Quranic verses and displays them in a non-intrusive manner.
+This Chrome extension fetches and displays Quranic verses at regular intervals accordint to user input at the start. It uses a JSON file (`quraan.json`) containing Quranic verses and displays them in a non-intrusive manner.
 
 ## How to Use
 
@@ -16,9 +16,9 @@ This Chrome extension fetches and displays Quranic verses at regular intervals. 
 3. The extension will fetch and display a new Quranic verse every 5 minutes.
 
 ## to do
-1/ make durration functional
+1/ make durration functional (done)
 2/ make close button functional
-3/ fix style (make body background transperant)
+3/ fix style (make body background transperant) (done)
 
 ## Files
 
@@ -40,11 +40,6 @@ This Chrome extension fetches and displays Quranic verses at regular intervals. 
 
 - Add your own extension logo (`extension_logo.png`) for a personalized touch.
 
-## Notes
-
-- The use of `alert` to display verses might be disruptive. Consider alternative methods for a more user-friendly experience.
-
-- Make sure to update `quraan.json` with the actual Quranic verses you want to display.
 
 ## License
 
